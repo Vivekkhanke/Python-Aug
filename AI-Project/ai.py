@@ -148,7 +148,7 @@ def get_weather(city):
     if not city:
         return "City context missing."
     base_url = "https://api.openweathermap.org/data/2.5/weather?"
-    api_key = "5ea9269ece0f0c287803a5b69fca4d80"
+    api_key = ""
     try:
         url = f"{base_url}q={city.strip()}&appid={api_key}"
         response = requests.get(url, timeout=4)

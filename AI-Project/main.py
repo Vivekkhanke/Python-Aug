@@ -16,7 +16,7 @@ from translate import Translator
 assitanceName = "Vivek"
 def weather(CITY):
     BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-    API_KEY="5ea9269ece0f0c287803a5b69fca4d80"
+    API_KEY=""
     if(API_KEY!=""):
         URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
         # HTTP request
