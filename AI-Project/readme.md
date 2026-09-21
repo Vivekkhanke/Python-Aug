@@ -24,3 +24,33 @@ To provide a **hands-free and interactive way to automate everyday computer task
 * Easy to extend with new commands/features
 * Local knowledge provides quick responses
 * User-friendly desktop interface
+
+Diagram
+
+              USER
+                │
+                ▼
+        🎤 Voice Command
+                │
+                ▼
+      Speech Recognition
+         (Voice → Text)
+                │
+                ▼
+          AI Processing
+                │
+       ┌────────┴────────┐
+       ▼                 ▼
+ Local Knowledge      Generative AI
+  + RapidFuzz       Hugging Face Model
+       │                 │
+       └────────┬────────┘
+                ▼
+          Response Text
+                │
+                ▼
+        🔊 Text-to-Speech
+          (pyttsx3)
+                │
+                ▼
+             USER
